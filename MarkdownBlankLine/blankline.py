@@ -24,8 +24,8 @@ class BlankLineExtension(Extension):
         
 
 
-def makeExtension(configs=None):
-    return BlankLineExtension(configs)
+def makeExtension(configs={}):
+    return BlankLineExtension(**configs)
 
 if __name__ == "__main__":
     import doctest
